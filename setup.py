@@ -18,7 +18,10 @@ def get_version(filename):
 with open('README.rst') as readme_file:
     readme = readme_file.read()
 
-requirements = ['Click']
+requirements = [
+    'Click',
+    'papis==0.6'
+]
 
 dev_requirements = [
     'coverage', 'pytest', 'pytest-cov', 'pytest-xdist', 'twine', 'pep8',
@@ -41,7 +44,7 @@ setup(
     description="A very simple tk based gui for papis",
     entry_points=dict(
         console_scripts=[
-            'papis_tk=papis_tk:main'
+            'papis-tk=papis_tk:main'
         ]
     ),
     install_requires=requirements,
@@ -51,11 +54,11 @@ setup(
     license="GNU General Public License v3",
     long_description=readme,
     include_package_data=True,
-    keywords='papis_tk',
-    name='papis_tk',
+    keywords='papis-tk',
+    name='papis-tk',
     packages=find_packages(where="src"),
     package_dir={"": "src"},
-    url='https://github.com/alejandrogallo/papis_tk',
+    url='https://github.com/alejandrogallo/papis-tk',
     version=version,
     zip_safe=False,
 )

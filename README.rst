@@ -22,6 +22,10 @@ A very simple tk based gui for papis
 
 Development of Papis TK happens on `Github`_.
 
+.. warning::
+
+  This gui quite buggy and it needs someone that takes care of it.
+
 
 Installation
 ------------
