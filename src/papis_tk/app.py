@@ -5,6 +5,10 @@ import sys
 import logging
 from papis_tk import tk
 import papis_tk
+import papis_tk.config
+
+
+papis_tk.config.register_default_settings()
 
 
 class PapisWidget(tk.Misc):
